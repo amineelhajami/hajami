@@ -1,0 +1,126 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\bib\\Desktop\\Projekt-Fluxon\\website_Fluxon\\ShopAPI\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{154C8A2E-F4A9-49D0-B845-3319E9C04489}|ShopAPI\\ShopAPI.csproj|c:\\users\\bib\\desktop\\projekt-fluxon\\website_fluxon\\shopapi\\shopapi\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{154C8A2E-F4A9-49D0-B845-3319E9C04489}|ShopAPI\\ShopAPI.csproj|solutionrelative:shopapi\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{154C8A2E-F4A9-49D0-B845-3319E9C04489}|ShopAPI\\ShopAPI.csproj|c:\\users\\bib\\desktop\\projekt-fluxon\\website_fluxon\\shopapi\\shopapi\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{154C8A2E-F4A9-49D0-B845-3319E9C04489}|ShopAPI\\ShopAPI.csproj|solutionrelative:shopapi\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{154C8A2E-F4A9-49D0-B845-3319E9C04489}|ShopAPI\\ShopAPI.csproj|c:\\users\\bib\\desktop\\projekt-fluxon\\website_fluxon\\shopapi\\shopapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{154C8A2E-F4A9-49D0-B845-3319E9C04489}|ShopAPI\\ShopAPI.csproj|solutionrelative:shopapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{154C8A2E-F4A9-49D0-B845-3319E9C04489}|ShopAPI\\ShopAPI.csproj|c:\\users\\bib\\desktop\\projekt-fluxon\\website_fluxon\\shopapi\\shopapi\\dtos\\registerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{154C8A2E-F4A9-49D0-B845-3319E9C04489}|ShopAPI\\ShopAPI.csproj|solutionrelative:shopapi\\dtos\\registerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{154C8A2E-F4A9-49D0-B845-3319E9C04489}|ShopAPI\\ShopAPI.csproj|c:\\users\\bib\\desktop\\projekt-fluxon\\website_fluxon\\shopapi\\shopapi\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{154C8A2E-F4A9-49D0-B845-3319E9C04489}|ShopAPI\\ShopAPI.csproj|solutionrelative:shopapi\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{154C8A2E-F4A9-49D0-B845-3319E9C04489}|ShopAPI\\ShopAPI.csproj|c:\\users\\bib\\desktop\\projekt-fluxon\\website_fluxon\\shopapi\\shopapi\\dtos\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{154C8A2E-F4A9-49D0-B845-3319E9C04489}|ShopAPI\\ShopAPI.csproj|solutionrelative:shopapi\\dtos\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "C:\\Users\\bib\\Desktop\\Projekt-Fluxon\\website_Fluxon\\ShopAPI\\ShopAPI\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "ShopAPI\\Controllers\\AuthController.cs",
+              "ToolTip": "C:\\Users\\bib\\Desktop\\Projekt-Fluxon\\website_Fluxon\\ShopAPI\\ShopAPI\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "ShopAPI\\Controllers\\AuthController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-15T00:14:13.509Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AuthService.cs",
+              "DocumentMoniker": "C:\\Users\\bib\\Desktop\\Projekt-Fluxon\\website_Fluxon\\ShopAPI\\ShopAPI\\Services\\AuthService.cs",
+              "RelativeDocumentMoniker": "ShopAPI\\Services\\AuthService.cs",
+              "ToolTip": "C:\\Users\\bib\\Desktop\\Projekt-Fluxon\\website_Fluxon\\ShopAPI\\ShopAPI\\Services\\AuthService.cs",
+              "RelativeToolTip": "ShopAPI\\Services\\AuthService.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABsAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-14T23:14:57.991Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\bib\\Desktop\\Projekt-Fluxon\\website_Fluxon\\ShopAPI\\ShopAPI\\appsettings.json",
+              "RelativeDocumentMoniker": "ShopAPI\\appsettings.json",
+              "ToolTip": "C:\\Users\\bib\\Desktop\\Projekt-Fluxon\\website_Fluxon\\ShopAPI\\ShopAPI\\appsettings.json",
+              "RelativeToolTip": "ShopAPI\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-03-14T23:24:15.85Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "RegisterDto.cs",
+              "DocumentMoniker": "C:\\Users\\bib\\Desktop\\Projekt-Fluxon\\website_Fluxon\\ShopAPI\\ShopAPI\\DTOs\\RegisterDto.cs",
+              "RelativeDocumentMoniker": "ShopAPI\\DTOs\\RegisterDto.cs",
+              "ToolTip": "C:\\Users\\bib\\Desktop\\Projekt-Fluxon\\website_Fluxon\\ShopAPI\\ShopAPI\\DTOs\\RegisterDto.cs",
+              "RelativeToolTip": "ShopAPI\\DTOs\\RegisterDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-14T23:13:07.276Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "LoginDto.cs",
+              "DocumentMoniker": "C:\\Users\\bib\\Desktop\\Projekt-Fluxon\\website_Fluxon\\ShopAPI\\ShopAPI\\DTOs\\LoginDto.cs",
+              "RelativeDocumentMoniker": "ShopAPI\\DTOs\\LoginDto.cs",
+              "ToolTip": "C:\\Users\\bib\\Desktop\\Projekt-Fluxon\\website_Fluxon\\ShopAPI\\ShopAPI\\DTOs\\LoginDto.cs",
+              "RelativeToolTip": "ShopAPI\\DTOs\\LoginDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-14T23:14:22.424Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\bib\\Desktop\\Projekt-Fluxon\\website_Fluxon\\ShopAPI\\ShopAPI\\Data\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "ShopAPI\\Data\\AppDbContext.cs",
+              "ToolTip": "C:\\Users\\bib\\Desktop\\Projekt-Fluxon\\website_Fluxon\\ShopAPI\\ShopAPI\\Data\\AppDbContext.cs",
+              "RelativeToolTip": "ShopAPI\\Data\\AppDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-13T23:17:21.987Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

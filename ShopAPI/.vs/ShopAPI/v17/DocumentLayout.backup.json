@@ -1,0 +1,177 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\bib\\Desktop\\Projekt-Fluxon\\website_Fluxon\\ShopAPI\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{154C8A2E-F4A9-49D0-B845-3319E9C04489}|ShopAPI\\ShopAPI.csproj|c:\\users\\bib\\desktop\\projekt-fluxon\\website_fluxon\\shopapi\\shopapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{154C8A2E-F4A9-49D0-B845-3319E9C04489}|ShopAPI\\ShopAPI.csproj|solutionrelative:shopapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{154C8A2E-F4A9-49D0-B845-3319E9C04489}|ShopAPI\\ShopAPI.csproj|c:\\users\\bib\\desktop\\projekt-fluxon\\website_fluxon\\shopapi\\shopapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{154C8A2E-F4A9-49D0-B845-3319E9C04489}|ShopAPI\\ShopAPI.csproj|solutionrelative:shopapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{154C8A2E-F4A9-49D0-B845-3319E9C04489}|ShopAPI\\ShopAPI.csproj|c:\\users\\bib\\desktop\\projekt-fluxon\\website_fluxon\\shopapi\\shopapi\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{154C8A2E-F4A9-49D0-B845-3319E9C04489}|ShopAPI\\ShopAPI.csproj|solutionrelative:shopapi\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{154C8A2E-F4A9-49D0-B845-3319E9C04489}|ShopAPI\\ShopAPI.csproj|c:\\users\\bib\\desktop\\projekt-fluxon\\website_fluxon\\shopapi\\shopapi\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{154C8A2E-F4A9-49D0-B845-3319E9C04489}|ShopAPI\\ShopAPI.csproj|solutionrelative:shopapi\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{154C8A2E-F4A9-49D0-B845-3319E9C04489}|ShopAPI\\ShopAPI.csproj|c:\\users\\bib\\desktop\\projekt-fluxon\\website_fluxon\\shopapi\\shopapi\\models\\payment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{154C8A2E-F4A9-49D0-B845-3319E9C04489}|ShopAPI\\ShopAPI.csproj|solutionrelative:shopapi\\models\\payment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{154C8A2E-F4A9-49D0-B845-3319E9C04489}|ShopAPI\\ShopAPI.csproj|c:\\users\\bib\\desktop\\projekt-fluxon\\website_fluxon\\shopapi\\shopapi\\models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{154C8A2E-F4A9-49D0-B845-3319E9C04489}|ShopAPI\\ShopAPI.csproj|solutionrelative:shopapi\\models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{154C8A2E-F4A9-49D0-B845-3319E9C04489}|ShopAPI\\ShopAPI.csproj|c:\\users\\bib\\desktop\\projekt-fluxon\\website_fluxon\\shopapi\\shopapi\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{154C8A2E-F4A9-49D0-B845-3319E9C04489}|ShopAPI\\ShopAPI.csproj|solutionrelative:shopapi\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{154C8A2E-F4A9-49D0-B845-3319E9C04489}|ShopAPI\\ShopAPI.csproj|c:\\users\\bib\\desktop\\projekt-fluxon\\website_fluxon\\shopapi\\shopapi\\models\\orderitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{154C8A2E-F4A9-49D0-B845-3319E9C04489}|ShopAPI\\ShopAPI.csproj|solutionrelative:shopapi\\models\\orderitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{154C8A2E-F4A9-49D0-B845-3319E9C04489}|ShopAPI\\ShopAPI.csproj|c:\\users\\bib\\desktop\\projekt-fluxon\\website_fluxon\\shopapi\\shopapi\\models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{154C8A2E-F4A9-49D0-B845-3319E9C04489}|ShopAPI\\ShopAPI.csproj|solutionrelative:shopapi\\models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\bib\\Desktop\\Projekt-Fluxon\\website_Fluxon\\ShopAPI\\ShopAPI\\Program.cs",
+              "RelativeDocumentMoniker": "ShopAPI\\Program.cs",
+              "ToolTip": "C:\\Users\\bib\\Desktop\\Projekt-Fluxon\\website_Fluxon\\ShopAPI\\ShopAPI\\Program.cs",
+              "RelativeToolTip": "ShopAPI\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-14T00:02:06.62Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\bib\\Desktop\\Projekt-Fluxon\\website_Fluxon\\ShopAPI\\ShopAPI\\Models\\User.cs",
+              "RelativeDocumentMoniker": "ShopAPI\\Models\\User.cs",
+              "ToolTip": "C:\\Users\\bib\\Desktop\\Projekt-Fluxon\\website_Fluxon\\ShopAPI\\ShopAPI\\Models\\User.cs",
+              "RelativeToolTip": "ShopAPI\\Models\\User.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAABLAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-11T09:48:28.817Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\bib\\Desktop\\Projekt-Fluxon\\website_Fluxon\\ShopAPI\\ShopAPI\\Data\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "ShopAPI\\Data\\AppDbContext.cs",
+              "ToolTip": "C:\\Users\\bib\\Desktop\\Projekt-Fluxon\\website_Fluxon\\ShopAPI\\ShopAPI\\Data\\AppDbContext.cs",
+              "RelativeToolTip": "ShopAPI\\Data\\AppDbContext.cs",
+              "ViewState": "AgIAACgAAAAAAAAAAAAYwDkAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-13T23:17:21.987Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\bib\\Desktop\\Projekt-Fluxon\\website_Fluxon\\ShopAPI\\ShopAPI\\appsettings.json",
+              "RelativeDocumentMoniker": "ShopAPI\\appsettings.json",
+              "ToolTip": "C:\\Users\\bib\\Desktop\\Projekt-Fluxon\\website_Fluxon\\ShopAPI\\ShopAPI\\appsettings.json",
+              "RelativeToolTip": "ShopAPI\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-03-12T11:39:23.536Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Payment.cs",
+              "DocumentMoniker": "C:\\Users\\bib\\Desktop\\Projekt-Fluxon\\website_Fluxon\\ShopAPI\\ShopAPI\\Models\\Payment.cs",
+              "RelativeDocumentMoniker": "ShopAPI\\Models\\Payment.cs",
+              "ToolTip": "C:\\Users\\bib\\Desktop\\Projekt-Fluxon\\website_Fluxon\\ShopAPI\\ShopAPI\\Models\\Payment.cs",
+              "RelativeToolTip": "ShopAPI\\Models\\Payment.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-12T11:32:19.944Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "OrderItem.cs",
+              "DocumentMoniker": "C:\\Users\\bib\\Desktop\\Projekt-Fluxon\\website_Fluxon\\ShopAPI\\ShopAPI\\Models\\OrderItem.cs",
+              "RelativeDocumentMoniker": "ShopAPI\\Models\\OrderItem.cs",
+              "ToolTip": "C:\\Users\\bib\\Desktop\\Projekt-Fluxon\\website_Fluxon\\ShopAPI\\ShopAPI\\Models\\OrderItem.cs",
+              "RelativeToolTip": "ShopAPI\\Models\\OrderItem.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-12T11:31:26.081Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Product.cs",
+              "DocumentMoniker": "C:\\Users\\bib\\Desktop\\Projekt-Fluxon\\website_Fluxon\\ShopAPI\\ShopAPI\\Models\\Product.cs",
+              "RelativeDocumentMoniker": "ShopAPI\\Models\\Product.cs",
+              "ToolTip": "C:\\Users\\bib\\Desktop\\Projekt-Fluxon\\website_Fluxon\\ShopAPI\\ShopAPI\\Models\\Product.cs",
+              "RelativeToolTip": "ShopAPI\\Models\\Product.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-12T11:27:05.792Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Category.cs",
+              "DocumentMoniker": "C:\\Users\\bib\\Desktop\\Projekt-Fluxon\\website_Fluxon\\ShopAPI\\ShopAPI\\Models\\Category.cs",
+              "RelativeDocumentMoniker": "ShopAPI\\Models\\Category.cs",
+              "ToolTip": "C:\\Users\\bib\\Desktop\\Projekt-Fluxon\\website_Fluxon\\ShopAPI\\ShopAPI\\Models\\Category.cs",
+              "RelativeToolTip": "ShopAPI\\Models\\Category.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAABRAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-12T11:25:09.147Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Order.cs",
+              "DocumentMoniker": "C:\\Users\\bib\\Desktop\\Projekt-Fluxon\\website_Fluxon\\ShopAPI\\ShopAPI\\Models\\Order.cs",
+              "RelativeDocumentMoniker": "ShopAPI\\Models\\Order.cs",
+              "ToolTip": "C:\\Users\\bib\\Desktop\\Projekt-Fluxon\\website_Fluxon\\ShopAPI\\ShopAPI\\Models\\Order.cs",
+              "RelativeToolTip": "ShopAPI\\Models\\Order.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-11T09:49:53.306Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
