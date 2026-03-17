@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\bib\\Desktop\\Projekt-Fluxon\\website_Fluxon\\ShopAPI\\ShopAPI\\ShopAPI.csproj": {}
+    "C:\\Users\\bib\\Documents\\LEA2\\WebShop_Fluxon\\ShopAPI\\ShopAPI\\ShopAPI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\bib\\Desktop\\Projekt-Fluxon\\website_Fluxon\\ShopAPI\\ShopAPI\\ShopAPI.csproj": {
+    "C:\\Users\\bib\\Documents\\LEA2\\WebShop_Fluxon\\ShopAPI\\ShopAPI\\ShopAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\bib\\Desktop\\Projekt-Fluxon\\website_Fluxon\\ShopAPI\\ShopAPI\\ShopAPI.csproj",
+        "projectUniqueName": "C:\\Users\\bib\\Documents\\LEA2\\WebShop_Fluxon\\ShopAPI\\ShopAPI\\ShopAPI.csproj",
         "projectName": "ShopAPI",
-        "projectPath": "C:\\Users\\bib\\Desktop\\Projekt-Fluxon\\website_Fluxon\\ShopAPI\\ShopAPI\\ShopAPI.csproj",
+        "projectPath": "C:\\Users\\bib\\Documents\\LEA2\\WebShop_Fluxon\\ShopAPI\\ShopAPI\\ShopAPI.csproj",
         "packagesPath": "C:\\Users\\bib\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\bib\\Desktop\\Projekt-Fluxon\\website_Fluxon\\ShopAPI\\ShopAPI\\obj\\",
+        "outputPath": "C:\\Users\\bib\\Documents\\LEA2\\WebShop_Fluxon\\ShopAPI\\ShopAPI\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -26,7 +26,9 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://packagesource1": {}
         },
         "frameworks": {
           "net8.0": {
@@ -104,7 +106,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.312/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.311/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

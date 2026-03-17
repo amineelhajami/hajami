@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "spizpp0kT/Q=",
+  "dgSpecHash": "NZxEHR2RpcI=",
   "success": true,
-  "projectFilePath": "C:\\Users\\bib\\Desktop\\Projekt-Fluxon\\website_Fluxon\\ShopAPI\\ShopAPI\\ShopAPI.csproj",
+  "projectFilePath": "C:\\Users\\bib\\Documents\\LEA2\\WebShop_Fluxon\\ShopAPI\\ShopAPI\\ShopAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\bib\\.nuget\\packages\\bcrypt.net-next\\4.1.0\\bcrypt.net-next.4.1.0.nupkg.sha512",
     "C:\\Users\\bib\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
