@@ -1,0 +1,20 @@
+services:
+  - type: web
+    name: fluxon-api
+    runtime: docker
+    rootDir: ShopAPI/ShopAPI
+    dockerfilePath: ./Dockerfile
+    autoDeploy: true
+    envVars:
+      - key: ASPNETCORE_ENVIRONMENT
+        value: Production
+      - key: ConnectionStrings__DefaultConnection
+        sync: false
+      - key: Jwt__Secret
+        sync: false
+      - key: Jwt__Issuer
+        value: Fluxon.Api
+      - key: Jwt__Audience
+        value: Fluxon.Web
+      - key: Cors__AllowedOrigins__0
+        sync: false
