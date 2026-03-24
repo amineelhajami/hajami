@@ -309,6 +309,13 @@ label {
   margin: 0 0 0.35rem;
 }
 
+.category-link {
+  display: inline-flex;
+  margin-top: 0.75rem;
+  color: var(--accent-deep);
+  font-weight: 800;
+}
+
 .product-grid {
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
 }
@@ -329,10 +336,49 @@ label {
   min-height: 220px;
 }
 
+.product-visual {
+  position: relative;
+}
+
+.product-badge {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  padding: 0.45rem 0.75rem;
+  border-radius: 999px;
+  background: rgba(19, 34, 56, 0.88);
+  color: white;
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
 .product-copy {
   display: grid;
   gap: 0.8rem;
   padding: 20px;
+}
+
+.rating-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  color: var(--ink-soft);
+  font-size: 0.86rem;
+  font-weight: 700;
+}
+
+.price-stack {
+  display: grid;
+  gap: 0.15rem;
+}
+
+.price-stack span {
+  color: var(--ink-soft);
+  font-size: 0.86rem;
+  text-decoration: line-through;
 }
 
 .chip,
@@ -510,6 +556,52 @@ label {
   background: rgba(255, 255, 255, 0.6);
 }
 
+.promo-band,
+.trust-grid {
+  display: grid;
+  gap: 18px;
+}
+
+.promo-band {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.promo-card,
+.trust-card {
+  padding: 28px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow);
+}
+
+.promo-card {
+  background: linear-gradient(135deg, rgba(255, 122, 69, 0.12) 0%, rgba(255, 255, 255, 0.9) 100%);
+}
+
+.promo-card-dark {
+  color: white;
+  background: linear-gradient(135deg, #132238 0%, #20364f 100%);
+}
+
+.promo-card-dark p,
+.promo-card-dark .eyebrow,
+.promo-card-dark h3 {
+  color: rgba(255, 255, 255, 0.92);
+}
+
+.trust-grid {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.trust-card {
+  background: rgba(255, 255, 255, 0.78);
+}
+
+.trust-card h3 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+
 .footer-grid {
   grid-template-columns: repeat(3, auto);
   align-content: center;
@@ -519,6 +611,8 @@ label {
   .hero-panel,
   .product-detail-layout,
   .checkout-layout,
+  .promo-band,
+  .trust-grid,
   .site-footer {
     grid-template-columns: 1fr;
   }
@@ -573,6 +667,7 @@ label {
   .section-heading,
   .toolbar,
   .product-actions,
+  .rating-row,
   .meta-row,
   .inline-actions,
   .detail-meta,

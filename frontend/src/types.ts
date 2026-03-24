@@ -1,6 +1,8 @@
 export type Category = {
   id: number;
   name: string;
+  description?: string;
+  image?: string;
 };
 
 export type Product = {
@@ -8,11 +10,17 @@ export type Product = {
   name: string;
   description: string;
   price: number;
+  oldPrice?: number;
   stock: number;
   categoryId: number;
   category?: Category;
   image: string;
+  badge?: string;
+  rating?: number;
+  reviewCount?: number;
   featured?: boolean;
+  bestSeller?: boolean;
+  newArrival?: boolean;
 };
 
 export type CartItem = {

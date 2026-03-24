@@ -27,7 +27,13 @@ export function ProductsPage() {
       );
     }
 
-    switch (sort) {
+        switch (sort) {
+      case "new":
+        next.sort((a, b) => Number(b.newArrival) - Number(a.newArrival));
+        break;
+      case "best":
+        next.sort((a, b) => Number(b.bestSeller) - Number(a.bestSeller));
+        break;
       case "price-asc":
         next.sort((a, b) => a.price - b.price);
         break;
@@ -72,6 +78,8 @@ export function ProductsPage() {
           />
           <select value={sort} onChange={(event) => setSort(event.target.value)} className="select-input">
             <option value="featured">Featured first</option>
+            <option value="best">Best sellers</option>
+            <option value="new">New arrivals</option>
             <option value="price-asc">Price: low to high</option>
             <option value="price-desc">Price: high to low</option>
             <option value="stock">Most in stock</option>

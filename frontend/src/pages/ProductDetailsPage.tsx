@@ -5,6 +5,7 @@ import type { Product } from "../types";
 import { StatusView } from "../ui/StatusView";
 import { QuantityControl } from "../ui/QuantityControl";
 import { useCart } from "../state/CartContext";
+import { visualStyle } from "../ui/visuals";
 
 export function ProductDetailsPage() {
   const { productId } = useParams();
@@ -67,15 +68,22 @@ export function ProductDetailsPage() {
 
   return (
     <section className="product-detail-layout">
-      <div className="detail-visual" style={{ background: product.image }} />
+      <div className="detail-visual" style={visualStyle(product.image)} />
       <div className="detail-copy panel">
         <span className="eyebrow">{product.category?.name ?? "Product details"}</span>
         <h1>{product.name}</h1>
         <p className="lead">{product.description}</p>
+        <div className="rating-row">
+          <span>{product.rating ? `${product.rating.toFixed(1)} / 5` : "New item"}</span>
+          <span>{product.reviewCount ? `${product.reviewCount} verified reviews` : "Fresh listing"}</span>
+        </div>
         <div className="detail-meta">
           <div>
             <span>Price</span>
-            <strong>EUR {product.price.toFixed(2)}</strong>
+            <div className="price-stack">
+              <strong>EUR {product.price.toFixed(2)}</strong>
+              {product.oldPrice ? <span>EUR {product.oldPrice.toFixed(2)}</span> : null}
+            </div>
           </div>
           <div>
             <span>Availability</span>

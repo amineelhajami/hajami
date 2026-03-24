@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import { useCart } from "../state/CartContext";
 import { QuantityControl } from "../ui/QuantityControl";
 import { StatusView } from "../ui/StatusView";
+import { visualStyle } from "../ui/visuals";
 
 export function CartPage() {
   const { items, removeItem, updateQuantity, subtotal } = useCart();
@@ -33,7 +34,7 @@ export function CartPage() {
         <div className="cart-list">
           {items.map((item) => (
             <article key={item.product.id} className="cart-row">
-              <div className="cart-visual" style={{ background: item.product.image }} />
+              <div className="cart-visual" style={visualStyle(item.product.image)} />
               <div className="cart-copy">
                 <h3>{item.product.name}</h3>
                 <p>{item.product.description}</p>
