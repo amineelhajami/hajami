@@ -52,7 +52,7 @@ export type CheckoutForm = {
   address: string;
   city: string;
   postalCode: string;
-  paymentMethod: "CreditCard" | "PayPal" | "CashOnDelivery";
+  paymentMethod: "CashOnDelivery";
 };
 
 export type OrderItem = {

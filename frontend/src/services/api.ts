@@ -10,10 +10,23 @@ import type {
   RegisterInput
 } from "../types";
 
+const authStorageKey = "fluxon.auth";
+
+function getAuthHeaders() {
+  const raw = window.localStorage.getItem(authStorageKey);
+  if (!raw) {
+    return {} as Record<string, string>;
+  }
+
+  const user = JSON.parse(raw) as AuthUser;
+  return user.token ? { Authorization: `Bearer ${user.token}` } : ({} as Record<string, string>);
+}
+
 async function request<T>(path: string, init?: RequestInit): Promise<T> {
   const response = await fetch(`${config.apiBaseUrl}${path}`, {
     headers: {
       "Content-Type": "application/json",
+      ...getAuthHeaders(),
       ...(init?.headers ?? {})
     },
     ...init

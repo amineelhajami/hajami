@@ -18,7 +18,7 @@ export function CheckoutPage() {
     address: "",
     city: "",
     postalCode: "",
-    paymentMethod: "CreditCard"
+    paymentMethod: "CashOnDelivery"
   });
 
   if (items.length === 0) {
@@ -46,6 +46,7 @@ export function CheckoutPage() {
       <form className="panel" onSubmit={handleSubmit}>
         <span className="eyebrow">Checkout</span>
         <h1>Collect shipping and payment details</h1>
+        <p>Fluxon currently ships with cash on delivery for the first production launch.</p>
         <div className="form-grid">
           <label>
             Full name
@@ -90,19 +91,7 @@ export function CheckoutPage() {
           </label>
           <label>
             Payment method
-            <select
-              value={form.paymentMethod}
-              onChange={(event) =>
-                setForm((current) => ({
-                  ...current,
-                  paymentMethod: event.target.value as CheckoutForm["paymentMethod"]
-                }))
-              }
-            >
-              <option value="CreditCard">Credit card</option>
-              <option value="PayPal">PayPal</option>
-              <option value="CashOnDelivery">Cash on delivery</option>
-            </select>
+            <input value="Cash on delivery" disabled />
           </label>
         </div>
         {error ? <p className="error-text">{error}</p> : null}
@@ -113,7 +102,8 @@ export function CheckoutPage() {
 
       <aside className="panel order-summary">
         <span className="eyebrow">Order summary</span>
-        <h2>Ready for API handoff</h2>
+        <h2>Cash on delivery launch flow</h2>
+        <p>Your order will be created now and payment will be collected manually on delivery.</p>
         {items.map((item) => (
           <div className="summary-row" key={item.product.id}>
             <span>

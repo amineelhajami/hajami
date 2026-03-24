@@ -1,16 +1,16 @@
-﻿using ShopAPI.Data;
+using System.IdentityModel.Tokens.Jwt;
+using System.Security.Claims;
+using System.Text;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.IdentityModel.Tokens;
+using ShopAPI.Data;
 using ShopAPI.DTOs;
 using ShopAPI.Models;
-using System.Security.Claims;
-using Microsoft.IdentityModel.Tokens; // Hinzugefügt für SymmetricSecurityKey
-using System.Text;
-using System.IdentityModel.Tokens.Jwt;
-using Microsoft.EntityFrameworkCore;
+
 namespace ShopAPI.Services
 {
     public class AuthService
     {
-
         private readonly AppDbContext _db;
         private readonly IConfiguration _config;
 
@@ -20,66 +20,90 @@ namespace ShopAPI.Services
             _config = config;
         }
 
-        // Register
-        public async Task<string> RegisterAsync(RegisterDto dto)
+        public async Task<AuthResponseDto> RegisterAsync(RegisterDto dto)
         {
-            // hier ob email breits vergeben ist 
-            if(_db.Users.Any(u => u.email == dto.Email))
+            if (await _db.Users.AnyAsync(u => u.Email == dto.Email))
             {
-                 throw new Exception("Email already in use");
+                throw new InvalidOperationException("Email already in use");
             }
 
             var user = new User
             {
-                name = dto.Name,
-                email = dto.Email,
-                passwordHash = BCrypt.Net.BCrypt.HashPassword(dto.Password),
+                Name = dto.Name.Trim(),
+                Email = dto.Email.Trim().ToLowerInvariant(),
+                PasswordHash = BCrypt.Net.BCrypt.HashPassword(dto.Password),
                 Role = "Customer"
             };
 
-            // hna i make spricher im db
             _db.Users.Add(user);
             await _db.SaveChangesAsync();
 
-            // Direkt einloggen -> JWT token zurückgeben
-            return GenerateToken(user);
+            return CreateAuthResponse(user);
         }
-        // Login
-        public async Task<string> LoginAsysc(LoginDto dto)
-        {
-            var user = await _db.Users.FirstOrDefaultAsync(u => u.email == dto.Email);
 
-            if(user == null || !BCrypt.Net.BCrypt.Verify(dto.Password, user.passwordHash))
+        public async Task<AuthResponseDto> LoginAsync(LoginDto dto)
+        {
+            var normalizedEmail = dto.Email.Trim().ToLowerInvariant();
+            var user = await _db.Users.FirstOrDefaultAsync(u => u.Email == normalizedEmail);
+
+            if (user == null || !BCrypt.Net.BCrypt.Verify(dto.Password, user.PasswordHash))
             {
-                throw new Exception("Invalid email or password");
+                throw new UnauthorizedAccessException("Invalid email or password");
             }
 
-            return GenerateToken(user);
-
+            return CreateAuthResponse(user);
         }
 
-        // Jwttoken geben
+        public async Task ForgotPasswordAsync(string email)
+        {
+            var normalizedEmail = email.Trim().ToLowerInvariant();
+            var exists = await _db.Users.AnyAsync(u => u.Email == normalizedEmail);
+
+            if (!exists)
+            {
+                return;
+            }
+
+            // Placeholder for email reset flow integration.
+        }
+
+        private AuthResponseDto CreateAuthResponse(User user)
+        {
+            return new AuthResponseDto
+            {
+                Name = user.Name,
+                Email = user.Email,
+                Role = user.Role,
+                Token = GenerateToken(user)
+            };
+        }
+
         private string GenerateToken(User user)
         {
+            var secret = _config["Jwt:Secret"];
+            if (string.IsNullOrWhiteSpace(secret))
+            {
+                throw new InvalidOperationException("JWT secret is not configured.");
+            }
+
             var claims = new[]
             {
                 new Claim(ClaimTypes.NameIdentifier, user.Id.ToString()),
-                new Claim(ClaimTypes.Email, user.email),
+                new Claim(ClaimTypes.Name, user.Name),
+                new Claim(ClaimTypes.Email, user.Email),
                 new Claim(ClaimTypes.Role, user.Role)
             };
 
-            var key = new SymmetricSecurityKey(
-                Encoding.UTF8.GetBytes(_config["Jwt:Secret"]!));
-
+            var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(secret));
             var creds = new SigningCredentials(key, SecurityAlgorithms.HmacSha256);
 
             var token = new JwtSecurityToken(
-                issuer : _config["Jwt:Issuer"],
-                audience : _config["Jwt:Audience"],
-                claims : claims,
-                expires : DateTime.Now.AddDays(7),
-                signingCredentials : creds
-                );
+                issuer: _config["Jwt:Issuer"],
+                audience: _config["Jwt:Audience"],
+                claims: claims,
+                expires: DateTime.UtcNow.AddDays(7),
+                signingCredentials: creds
+            );
 
             return new JwtSecurityTokenHandler().WriteToken(token);
         }

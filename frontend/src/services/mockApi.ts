@@ -87,7 +87,7 @@ export const mockApi = {
       payment: {
         method: input.paymentMethod,
         amount: total,
-        status: "Paid"
+        status: "Pending"
       },
       customerEmail: input.email,
       shippingAddress: `${input.address}, ${input.city}, ${input.postalCode}`

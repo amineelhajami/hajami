@@ -21,7 +21,7 @@ namespace ShopAPI.Data
             // Das nennt man Fluent API, damit können wir die Beziehungen zwischen den Tabellen definieren
             modelBuilder.Entity<Order>()
                 .HasOne(o => o.User)
-                .WithMany(u => u.orders)
+                .WithMany(u => u.Orders)
                 .HasForeignKey(o => o.UserId);
 
             modelBuilder.Entity<OrderItem>()
@@ -47,6 +47,14 @@ namespace ShopAPI.Data
             modelBuilder.Entity<Product>()
                  .Property(p => p.Price)
                  .HasColumnType("decimal(10,2)");
+
+            modelBuilder.Entity<Product>()
+                 .Property(p => p.OldPrice)
+                 .HasColumnType("decimal(10,2)");
+
+            modelBuilder.Entity<Product>()
+                 .Property(p => p.Rating)
+                 .HasColumnType("decimal(3,2)");
  
             modelBuilder.Entity<OrderItem>()
                 .Property(oi => oi.UnitPrice)
@@ -55,6 +63,14 @@ namespace ShopAPI.Data
             modelBuilder.Entity<Payment>()
                 .Property(p => p.Amount)
                 .HasColumnType("decimal(10,2)");
+
+            modelBuilder.Entity<Order>()
+                .Property(o => o.TotalAmount)
+                .HasColumnType("decimal(10,2)");
+
+            modelBuilder.Entity<User>()
+                .HasIndex(u => u.Email)
+                .IsUnique();
 
         }
 
